@@ -1,3 +1,87 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    background-color: #000;
+    padding: 0 3rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.menubar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.menubar li a {
+    cursor: pointer;
+    text-decoration: none;
+    /* color: #fff; */
+    transition: color 1s;
+}
+
+.menubar li a:hover {
+    color: blue;
+}
+
+
+
+.menubar button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.menubar button:hover {
+    background-color: #605ffc;
+
+}
+
+.menubar button:active {
+
+    transform: scale(.9);
+}
+
+.main-div-1 {
     background-color: red;
+    padding: 2rem;
+    width: 70%;
+}
+
+.main-div-1 h1 {
+    font-size: 6rem;
+
+}
+
+.main-div-1 p {
+    font-size: 2rem;
+}
+
+.main-div-1 button {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background-color: #605ffc;
+    border-radius: 20px;
+    border: none;
 }
